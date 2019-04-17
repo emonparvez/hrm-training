@@ -185,6 +185,7 @@
     <Compile Include="Controllers\DivisionsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SectionsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -196,12 +197,21 @@
     <Compile Include="Migrations\201904121208394_mig02.Designer.cs">
       <DependentUpon>201904121208394_mig02.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904171320173_mig03.cs" />
+    <Compile Include="Migrations\201904171320173_mig03.Designer.cs">
+      <DependentUpon>201904171320173_mig03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904171335059_mig003.cs" />
+    <Compile Include="Migrations\201904171335059_mig003.Designer.cs">
+      <DependentUpon>201904171335059_mig003.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Dept.cs" />
     <Compile Include="Models\Division.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Section.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -274,6 +284,11 @@
     <Content Include="Views\Depts\Details.cshtml" />
     <Content Include="Views\Depts\Edit.cshtml" />
     <Content Include="Views\Depts\Index.cshtml" />
+    <Content Include="Views\Sections\Create.cshtml" />
+    <Content Include="Views\Sections\Delete.cshtml" />
+    <Content Include="Views\Sections\Details.cshtml" />
+    <Content Include="Views\Sections\Edit.cshtml" />
+    <Content Include="Views\Sections\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201904121134459_FirstMig.resx">
@@ -281,6 +296,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904121208394_mig02.resx">
       <DependentUpon>201904121208394_mig02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904171320173_mig03.resx">
+      <DependentUpon>201904171320173_mig03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904171335059_mig003.resx">
+      <DependentUpon>201904171335059_mig003.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

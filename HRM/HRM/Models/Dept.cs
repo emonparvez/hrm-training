@@ -21,6 +21,7 @@ namespace HRM.Models
 
         public virtual Division Division { get; set; }
 
+        public List<Section> Sections { get; set; }
 
 
 
