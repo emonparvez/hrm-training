@@ -21,6 +21,8 @@ namespace HRM.Models
         [Display(Name = "Designation Name")]
         public string DesignationName { get; set; }
 
+        public List<Employee> Employees { get; set; }
+
 
 
 

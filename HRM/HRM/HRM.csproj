@@ -184,6 +184,7 @@
     <Compile Include="Controllers\DeptsController.cs" />
     <Compile Include="Controllers\DesignationsController.cs" />
     <Compile Include="Controllers\DivisionsController.cs" />
+    <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\SectionsController.cs" />
@@ -214,11 +215,20 @@
     <Compile Include="Migrations\201904190949033_stringlengthadded.Designer.cs">
       <DependentUpon>201904190949033_stringlengthadded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904191107090_Employee.cs" />
+    <Compile Include="Migrations\201904191107090_Employee.Designer.cs">
+      <DependentUpon>201904191107090_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904191113125_EmployeeUpdated.cs" />
+    <Compile Include="Migrations\201904191113125_EmployeeUpdated.Designer.cs">
+      <DependentUpon>201904191113125_EmployeeUpdated.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Dept.cs" />
     <Compile Include="Models\Designation.cs" />
     <Compile Include="Models\Division.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Section.cs" />
@@ -304,6 +314,11 @@
     <Content Include="Views\Designations\Details.cshtml" />
     <Content Include="Views\Designations\Edit.cshtml" />
     <Content Include="Views\Designations\Index.cshtml" />
+    <Content Include="Views\Employees\Create.cshtml" />
+    <Content Include="Views\Employees\Delete.cshtml" />
+    <Content Include="Views\Employees\Details.cshtml" />
+    <Content Include="Views\Employees\Edit.cshtml" />
+    <Content Include="Views\Employees\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201904121134459_FirstMig.resx">
@@ -323,6 +338,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904190949033_stringlengthadded.resx">
       <DependentUpon>201904190949033_stringlengthadded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904191107090_Employee.resx">
+      <DependentUpon>201904191107090_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904191113125_EmployeeUpdated.resx">
+      <DependentUpon>201904191113125_EmployeeUpdated.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
