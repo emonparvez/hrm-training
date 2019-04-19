@@ -15,10 +15,12 @@ namespace HRM.Models
 
 
         [Display(Name = "Section  Code")]
+        [StringLength(10)]
         public string SectionCode { get; set; }
 
 
         [Display(Name = "Section  Name")]
+        [StringLength(150)]
         public string SectionName { get; set; }
 
 
