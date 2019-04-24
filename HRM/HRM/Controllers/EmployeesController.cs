@@ -7,12 +7,15 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using HRM.Models;
+using System.IO;
+using System.Drawing;
 
 namespace HRM.Controllers
 {
     public class EmployeesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+        private object file;
 
         public object Id { get; private set; }
 
@@ -24,6 +27,7 @@ namespace HRM.Controllers
           
      
         }
+
 
         // GET: Employees/Details/5
         public ActionResult Details(int? id)
@@ -52,10 +56,14 @@ namespace HRM.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,EmployeeCode,EmployeeName,NickName,FatherName,MotherName,Desig")] Employee employee)
+        public ActionResult Create([Bind(Include = "Id,EmployeeCode,EmployeeName,NickName,FatherName,MotherName,Desig")] Employee employee,HttpPostedFileBase file)
         {
             if (ModelState.IsValid)
             {
+                file.SaveAs(HttpContext.Server.MapPath("~/Images/")
+                                                  + file.FileName);
+
+
                 db.Employees.Add(employee);
                 db.SaveChanges();
                 return RedirectToAction("Index");

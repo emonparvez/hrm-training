@@ -39,6 +39,10 @@ namespace HRM.Models
         [StringLength(150)]
         public string MotherName { get; set; }
 
+
+       
+
+
         public int Desig { get; set; }
 
 
@@ -48,14 +52,9 @@ namespace HRM.Models
 
 
 
-
-
-
-
-
-
-
-
-
     }
+
+
+
+
 }
