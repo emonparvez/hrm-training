@@ -19,6 +19,9 @@ namespace HRM.Controllers
         {
             var depts = db.Depts.Include(d => d.Division);
             return View(depts.ToList());
+           
+            
+
         }
 
         // GET: Depts/Details/5

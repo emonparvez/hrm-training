@@ -14,11 +14,15 @@ namespace HRM.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
+        public object Id { get; private set; }
+
         // GET: Employees
         public ActionResult Index()
         {
             var employees = db.Employees.Include(e => e.Designations);
             return View(employees.ToList());
+          
+     
         }
 
         // GET: Employees/Details/5
