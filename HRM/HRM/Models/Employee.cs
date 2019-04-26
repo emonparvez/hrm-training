@@ -14,6 +14,7 @@ namespace HRM.Models
         public int Id { get; set; }
 
 
+
         [Display(Name = "Employee  Code")]
         [StringLength(10)]
         public string EmployeeCode { get; set; }
@@ -40,7 +41,26 @@ namespace HRM.Models
         public string MotherName { get; set; }
 
 
-       
+        [Display(Name = "Mobile Number")]
+        [StringLength(15)]
+        public string MobileNumber { get; set; }
+
+
+        [Display(Name = "Email")]
+        [StringLength(100)]
+        public string Email { get; set; }
+
+
+
+        [Display(Name = "Blood group")]
+        [StringLength(150)]
+        public string BloodGroup { get; set; }
+
+
+        [Display(Name = "Address")]
+        [StringLength(150)]
+        public string Address { get; set; }
+
 
 
         public int Desig { get; set; }
@@ -48,6 +68,13 @@ namespace HRM.Models
 
         [ForeignKey("Desig")]
         public virtual Designation Designations { get; set; }
+
+
+        [Display(Name = "Dept Name")]
+        public int DeptId { get; set; }
+
+        [ForeignKey("DeptId")]
+        public virtual Dept Depts { get; set; }
 
 
 

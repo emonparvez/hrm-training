@@ -23,7 +23,7 @@ namespace HRM.Models
 
         public List<Section> Sections { get; set; }
 
-       
+        public List<Employee> Employees { get; set; }
 
 
 

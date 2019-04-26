@@ -223,6 +223,18 @@
     <Compile Include="Migrations\201904191113125_EmployeeUpdated.Designer.cs">
       <DependentUpon>201904191113125_EmployeeUpdated.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904260955138_added-deptid.cs" />
+    <Compile Include="Migrations\201904260955138_added-deptid.Designer.cs">
+      <DependentUpon>201904260955138_added-deptid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904261007165_mig010.cs" />
+    <Compile Include="Migrations\201904261007165_mig010.Designer.cs">
+      <DependentUpon>201904261007165_mig010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904261018148_mig011.cs" />
+    <Compile Include="Migrations\201904261018148_mig011.Designer.cs">
+      <DependentUpon>201904261018148_mig011.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Dept.cs" />
@@ -344,6 +356,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904191113125_EmployeeUpdated.resx">
       <DependentUpon>201904191113125_EmployeeUpdated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904260955138_added-deptid.resx">
+      <DependentUpon>201904260955138_added-deptid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904261007165_mig010.resx">
+      <DependentUpon>201904261007165_mig010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904261018148_mig011.resx">
+      <DependentUpon>201904261018148_mig011.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
