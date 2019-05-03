@@ -235,6 +235,22 @@
     <Compile Include="Migrations\201904261018148_mig011.Designer.cs">
       <DependentUpon>201904261018148_mig011.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904261156534_mig012.cs" />
+    <Compile Include="Migrations\201904261156534_mig012.Designer.cs">
+      <DependentUpon>201904261156534_mig012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905030959222_migpic.cs" />
+    <Compile Include="Migrations\201905030959222_migpic.Designer.cs">
+      <DependentUpon>201905030959222_migpic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905031005143_migpic3.cs" />
+    <Compile Include="Migrations\201905031005143_migpic3.Designer.cs">
+      <DependentUpon>201905031005143_migpic3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905031053143_migpic4.cs" />
+    <Compile Include="Migrations\201905031053143_migpic4.Designer.cs">
+      <DependentUpon>201905031053143_migpic4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Dept.cs" />
@@ -365,6 +381,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904261018148_mig011.resx">
       <DependentUpon>201904261018148_mig011.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904261156534_mig012.resx">
+      <DependentUpon>201904261156534_mig012.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905030959222_migpic.resx">
+      <DependentUpon>201905030959222_migpic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905031005143_migpic3.resx">
+      <DependentUpon>201905031005143_migpic3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905031053143_migpic4.resx">
+      <DependentUpon>201905031053143_migpic4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

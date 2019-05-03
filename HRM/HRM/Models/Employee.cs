@@ -78,6 +78,12 @@ namespace HRM.Models
 
 
 
+        [Display(Name = "Upload File")]
+        public string EmployeePhotoPath { get; set; }
+
+        [NotMapped]
+        public HttpPostedFileBase EmployeePhoto { get; set; }
+
 
     }
 
